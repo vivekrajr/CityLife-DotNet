@@ -1,0 +1,17 @@
+{
+  "name": "CityLife",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass Styles/styles.scss wwwroot/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.15.1",
+    "webpack": "^4.26.0"
+  }
+}

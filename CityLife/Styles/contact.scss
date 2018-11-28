@@ -1,0 +1,28 @@
+.contact-content {
+  margin: 6rem 0rem;
+}
+
+.contact-section {
+  margin: 1rem 6rem;
+}
+.contact-person {
+  //   padding-left: 10rem;
+}
+.contact-person-right {
+  //   padding-right: 10rem;
+}
+.contact-person-img {
+  max-width: 8rem;
+  height: auto;
+}
+.contact-person-name {
+  padding: 0px;
+  margin: 0px 0px 0px 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-person,
+  .contact-person-right {
+    padding: 0px 0px 2rem 0rem;
+  }
+}

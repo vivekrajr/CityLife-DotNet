@@ -1,0 +1,57 @@
+#Meetingroom_1:hover #room_1,
+#Meetingroom_2:hover #room_2,
+#Meetingroom_3:hover #room_3,
+#Meetingroom_4:hover #room_4,
+#Meetingroom_5:hover #room_5,
+#Meetingroom_6:hover #room_6,
+#Meetingroom_7:hover #room_7,
+#Meetingroom_8:hover #room_8,
+#Meetingroom_9:hover #room_9 {
+  fill: #f0f0f0;
+  stroke: $red;
+  stroke-width: 6;
+}
+
+#room_9,
+#room_8,
+#room_7,
+#room_6,
+#room_5,
+#room_4,
+#room_3,
+#room_2,
+#room_1 {
+  transition: all 0.5s ease-in-out;
+}
+
+.plan {
+  margin-top: 8rem;
+  .plan__text {
+    padding: 0rem 2rem;
+  }
+  .plan-img {
+    svg {
+      max-width: 1000px;
+    }
+  }
+  .card {
+    margin-bottom: 5rem;
+    .card-icon {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+    .card-user {
+      margin-right: 7px;
+    }
+    .card-text {
+      font-size: 1.2rem;
+    }
+    .card-title {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+  }
+  .highlight {
+    border: solid 4px $red;
+  }
+}

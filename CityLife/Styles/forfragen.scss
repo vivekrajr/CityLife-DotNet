@@ -1,0 +1,55 @@
+main {
+  margin-top: 6rem;
+}
+
+.header-image-row {
+  margin-top: 1rem;
+}
+
+.main-content-row {
+  margin-top: 1rem;
+}
+
+.sub-content-row {
+  margin-top: 1rem;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.request-img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.pics_in_a_row {
+  display: flex;
+}
+
+.img1 {
+  flex: 1.3344;
+}
+.img2 {
+  flex: 1.3345;
+}
+.img3 {
+  flex: 0.75;
+}
+.img4 {
+  flex: 1.5023;
+}
+.img5 {
+  flex: 0.75;
+}

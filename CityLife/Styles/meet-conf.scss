@@ -1,0 +1,43 @@
+.konf-menu-item {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $grey !important;
+
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
+  font-size: 1.3rem;
+  color: $grey;
+  background: #d7d8d9;
+  margin-right: -10px;
+  margin-bottom: 3rem;
+  &:hover {
+    color: $grey;
+  }
+}
+
+.nav-item .active {
+  border-bottom: 1px solid $white !important;
+  overflow: scroll;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+.conf-section {
+  margin: 4rem 4rem 6rem 4rem;
+}
+
+.conf-button {
+  margin-top: 5.5rem;
+  button {
+    width: 11rem;
+    height: 3.5rem;
+    color: $white;
+    font-size: 1rem;
+    letter-spacing: 0.0825em;
+    background-color: $red;
+  }
+}

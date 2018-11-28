@@ -1,0 +1,380 @@
+main {
+  margin-top: 6rem;
+}
+
+.header-image-row {
+  margin-top: 1rem;
+}
+
+.main-content-row {
+  margin-top: 1rem;
+}
+
+.sub-content-row {
+  margin-top: 1rem;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.request-img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.pics_in_a_row {
+  display: flex;
+}
+
+.img1 {
+  flex: 1.3344;
+}
+
+.img2 {
+  flex: 1.3345;
+}
+
+.img3 {
+  flex: 0.75;
+}
+
+.img4 {
+  flex: 1.5023;
+}
+
+.img5 {
+  flex: 0.75;
+}
+
+#Meetingroom_1:hover #room_1,
+#Meetingroom_2:hover #room_2,
+#Meetingroom_3:hover #room_3,
+#Meetingroom_4:hover #room_4,
+#Meetingroom_5:hover #room_5,
+#Meetingroom_6:hover #room_6,
+#Meetingroom_7:hover #room_7,
+#Meetingroom_8:hover #room_8,
+#Meetingroom_9:hover #room_9 {
+  fill: #f0f0f0;
+  stroke: #bb4f4d;
+  stroke-width: 6;
+}
+
+#room_9,
+#room_8,
+#room_7,
+#room_6,
+#room_5,
+#room_4,
+#room_3,
+#room_2,
+#room_1 {
+  transition: all 0.5s ease-in-out;
+}
+
+.plan {
+  margin-top: 8rem;
+}
+.plan .plan__text {
+  padding: 0rem 2rem;
+}
+.plan .plan-img svg {
+  max-width: 1000px;
+}
+.plan .card {
+  margin-bottom: 5rem;
+}
+.plan .card .card-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.plan .card .card-user {
+  margin-right: 7px;
+}
+.plan .card .card-text {
+  font-size: 1.2rem;
+}
+.plan .card .card-title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.plan .highlight {
+  border: solid 4px #bb4f4d;
+}
+
+.contact-content {
+  margin: 6rem 0rem;
+}
+
+.contact-section {
+  margin: 1rem 6rem;
+}
+
+.contact-person-img {
+  max-width: 8rem;
+  height: auto;
+}
+
+.contact-person-name {
+  padding: 0px;
+  margin: 0px 0px 0px 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-person,
+.contact-person-right {
+    padding: 0px 0px 2rem 0rem;
+  }
+}
+.konf-menu-item {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #898989 !important;
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
+  font-size: 1.3rem;
+  color: #898989;
+  background: #d7d8d9;
+  margin-right: -10px;
+  margin-bottom: 3rem;
+}
+.konf-menu-item:hover {
+  color: #898989;
+}
+
+.nav-item .active {
+  border-bottom: 1px solid #fff !important;
+  overflow: scroll;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+.conf-section {
+  margin: 4rem 4rem 6rem 4rem;
+}
+
+.conf-button {
+  margin-top: 5.5rem;
+}
+.conf-button button {
+  width: 11rem;
+  height: 3.5rem;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.0825em;
+  background-color: #bb4f4d;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 6.5rem;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+.background {
+  background: url("../images/mol.png") repeat;
+  background-size: 100% auto;
+  position: fixed;
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wrapper {
+  width: 520px;
+  padding: 40px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.25);
+}
+
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+  box-shadow: 0px 0px 5px 1px #c4bcc4;
+}
+
+.navbar {
+  width: 100%;
+  right: auto;
+  left: auto;
+  max-width: 1140px;
+}
+.navbar .navbar-brand-img {
+  width: 10rem;
+  height: auto;
+}
+.navbar .navbar-nav {
+  width: 100%;
+}
+.navbar .navbar-nav .nav-link {
+  color: #000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.navbar .navbar-nav .nav-request {
+  background-color: #bb4f4d;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.wrapper-background {
+  background: url("../images/main.png") repeat;
+  height: 700px;
+}
+.wrapper-background .wrapper-text h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+.wrapper-background .wrapper-text h1 span {
+  color: #bb4f4d;
+}
+.wrapper-background .wrapper-text h3 {
+  font-size: 1.5rem;
+}
+.wrapper-background .wrapper__btn button {
+  width: 9rem;
+  height: 3.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 0.0825em;
+}
+.wrapper-background .wrapper__btn .btn--green {
+  background-color: #5f7b66;
+}
+.wrapper-background .wrapper__btn .btn--red {
+  background-color: #bb4f4d;
+}
+
+.description {
+  padding: 3rem 10rem;
+}
+.description .description__main {
+  font-size: 2rem;
+}
+.description .description__main::first-letter {
+  text-transform: uppercase;
+}
+
+.block .block__header {
+  color: #bb4f4d;
+}
+
+.footer__logo {
+  width: 80%;
+}
+
+.divider {
+  color: #000;
+}
+
+.contact-info ul {
+  width: 100%;
+  list-style: none;
+}
+.contact-info ul a {
+  color: #000;
+}
+
+.footer-sticky {
+  height: 6rem;
+  background-color: #898989;
+}
+.footer-sticky .footer__social-media {
+  width: 100%;
+  list-style: none;
+}
+.footer-sticky .footer__social-media li {
+  margin-right: 2rem;
+}
+.footer-sticky .footer__social-media li a {
+  color: #fff;
+}
+.footer-sticky .footer__social-media li a i {
+  font-size: 2rem;
+}
+.footer-sticky .footer-sticky__contact {
+  width: 100%;
+  list-style: none;
+}
+.footer-sticky .footer-sticky__contact li {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.footer-sticky .footer-sticky__contact li i {
+  font-size: 2rem;
+}
+.footer-sticky .footer-sticky__contact .footer-sticky__envelope {
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    right: 0;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    width: auto;
+  }
+}
+.modal-content .modal-header {
+  border: none;
+}
+.modal-content .modal__button {
+  width: 11rem;
+  height: 2.5rem;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.0825em;
+  background-color: #bb4f4d;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+#datepicker {
+  width: 10rem;
+  text-align: center;
+  padding-right: 1rem;
+}
+
+.list-group-item a {
+  color: #333;
+}
+
+.gj-datepicker {
+  border: solid 1px #898989;
+}
+
+/*# sourceMappingURL=styles.css.map */
