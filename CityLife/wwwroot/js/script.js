@@ -31,9 +31,9 @@ function highlightCard() {
   document.getElementById(targetId).classList.add("highlight");
 }
 
-$(function() {
-  $(document).scroll(function() {
-    var $nav = $(".fixed-top");
-    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-  });
-});
+// $(function() {
+//   $(document).scroll(function() {
+//     var $nav = $(".fixed-top");
+//     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+//   });
+// });

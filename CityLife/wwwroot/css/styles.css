@@ -226,6 +226,7 @@ p {
   right: auto;
   left: auto;
   max-width: 1140px;
+  padding: 0px;
 }
 .navbar .navbar-brand-img {
   width: 10rem;
@@ -288,7 +289,7 @@ p {
 }
 
 .footer__logo {
-  width: 80%;
+  width: 60%;
 }
 
 .divider {
