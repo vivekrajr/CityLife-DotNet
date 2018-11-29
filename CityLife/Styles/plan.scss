@@ -55,3 +55,9 @@
     border: solid 4px $red;
   }
 }
+
+a.card,
+a.card:hover {
+  color: inherit;
+  text-decoration: none;
+}
