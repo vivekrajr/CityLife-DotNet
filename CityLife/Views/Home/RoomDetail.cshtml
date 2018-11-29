@@ -1,0 +1,63 @@
+@{
+    ViewData["Title"] = "Room";
+}
+
+<div class="background"></div>
+<div class="row">
+    <main role="main" class="container">
+        <partial name="_HeaderPartial" />
+
+        <div class="row">
+            <div class="col-sm">
+                <img src="http://placehold.it/1440x400/4d4d4d"
+                     class="img-fluid request-img"
+                     alt="" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Jenner</h2>
+                <h5>Information om rummet</h5>
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                </p>
+
+                <h4>Olika Mobleringar</h4>
+
+                <div class="row">
+
+                    @for (var i = 0; i < 5; i++)
+                    {
+                    <div class="col-sm-4">
+                        <img src="http://placehold.it/200x200" />
+
+                        <p>Room</p>
+                    </div>
+                    }
+
+
+                </div>
+            </div>
+            <div class="col-sm-6"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm text-center">
+                <a class="btn btn-danger" asp-controller="Home" asp-action="Plan">Tillbaka till rum</a>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+        </div>
+    </main>
+</div>
+<partial name="_FooterPartial" />
+<partial name="_ModalsPartial" />
+

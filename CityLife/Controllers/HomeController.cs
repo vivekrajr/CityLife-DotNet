@@ -27,6 +27,10 @@ namespace CityLife.Controllers
       return View();
     }
 
+    public IActionResult RoomDetail()
+    {
+      return View();
+    }
 
     public IActionResult About()
     {
