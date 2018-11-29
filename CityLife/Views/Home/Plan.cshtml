@@ -1,5 +1,10 @@
 @{
     ViewData["Title"] = "Conference plan";
+
+
+    var roomNames=new []{"Fleming", "Jenner","Röntgen","Molekylen","Cellen","Nightingale","Crick","Watson","Elmqvist"};
+    var ids = new[]{"Meetingroom_3_card", "Meetingroom_1_card", "Meetingroom_2_card", "Meetingroom_4_card",
+     "Meetingroom_5_card", "Meetingroom_6_card", "Meetingroom_7_card", "Meetingroom_8_card", "Meetingroom_9_card",};
 }
 
 <!-- background molecule pic -->
@@ -242,11 +247,16 @@
         <!-- Cards with rooms -->
         <div>
           <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <a class="card"  id="Meetingroom_3_card">
+            @for(var i=0; i<roomNames.Count(); i++) {
+              
+
+
+ <div class="col-sm-6 col-md-4">
+              <a href="">
+              <div class="card text-dark"  id="@ids[i]">
                 <div class="card-body">
                   <h4 class="card-title text-center text-capitalize">
-                    Fleming
+                   @roomNames[i]
                   </h4>
                   <div class="text-center">
                     <span class="card-icon"
@@ -265,185 +275,16 @@
                   src="https://via.placeholder.com/250x150"
                   alt="Card image cap"
                 />
+              </div>
               </a>
             </div>
-<!-- <a href=""> -->
-            <div class="col-sm-6 col-md-4">
-              <div class="card"  id="Meetingroom_2_card">
-                <div class="card-body">
-                  <h4 class="card-title text-center text-capitalize">
-                    Röntgen
-                  </h4>
-                  <div class="text-center">
-                    <span class="card-icon"
-                      ><i class="fas fa-user card-user"></i>20</span
-                    >
 
-                    <span class="card-icon"><i class="fas fa-wifi"></i></span>
-                    <span class="card-icon"><i class="fas fa-video"></i></span>
-                    <span class="card-icon"
-                      ><i class="fas fa-utensils"></i
-                    ></span>
-                  </div>
-                </div>
-                <img
-                  class="card-img-top"
-                     src="https://via.placeholder.com/250x150"
-                  alt="Card image cap"
-                />
-              </div>
-            </div>
-            <!-- </a> -->
-            <!-- <a href=""> -->
-            <div class="col-sm-6 col-md-4">
-              <div class="card " id="Meetingroom_1_card" >
-                <div class="card-body">
-                  <h4 class="card-title text-center text-capitalize">
-                    Jenner
-                  </h4>
-                  <div class="text-center">
-                    <span class="card-icon"
-                      ><i class="fas fa-user card-user"></i>20</span
-                    >
-                    <span class="card-icon"><i class="fas fa-wifi"></i></span>
-                    <span class="card-icon"><i class="fas fa-video"></i></span>
-                    <span class="card-icon"
-                      ><i class="fas fa-utensils"></i
-                    ></span>
-                  </div>
-                </div>
-                <img
-                  class="card-img-top"
-                   src="https://via.placeholder.com/250x150"
-                  alt="Card image cap"
-                />
-              </div>
-            </div>
-            <!-- </a> -->
-            <!-- <a href=""> -->
-            <div class="col-sm-6 col-md-4">
-                    <div class="card"  id="Meetingroom_4_card">
-                      <div class="card-body">
-                        <h4 class="card-title text-center text-capitalize">Molekylen</h4>
-                        <div class="text-center">
-                              <span class="card-icon"><i class="fas fa-user card-user" ></i>20</span>
 
-                              <span class="card-icon"><i class="fas fa-wifi"></i></span>
-                              <span class="card-icon"><i class="fas fa-video"></i></span>
-                              <span class="card-icon"><i class="fas fa-utensils"></i></span>
-                        </div>
-                      </div>
-                      <img
-                        class="card-img-top"
-                           src="https://via.placeholder.com/250x150"
-                        alt="Card image cap"
-                      />
-                    </div>
-                  </div>
-                  <!-- </a> -->
-                  <!-- <a href=""> -->
-                  <div class="col-sm-6 col-md-4">
-                        <div class="card"  id="Meetingroom_5_card">
-                          <div class="card-body">
-                            <h4 class="card-title text-center text-capitalize">Cellen</h4>
-                            <div class="text-center">
-                                  <span class="card-icon"><i class="fas fa-user card-user" ></i>20</span>
 
-                                  <span class="card-icon"><i class="fas fa-wifi"></i></span>
-                                  <span class="card-icon"><i class="fas fa-video"></i></span>
-                                  <span class="card-icon"><i class="fas fa-utensils"></i></span>
-                            </div>
-                          </div>
-                          <img
-                            class="card-img-top"
-                             src="https://via.placeholder.com/250x150"
-                            alt="Card image cap"
-                          />
-                        </div>
-                      </div>
-                      <!-- </a> -->
-                      <!-- <a href="" class="w-100"> -->
-                      <div class="col-sm-6 col-md-4">
-                            <div class="card"  id="Meetingroom_6_card">
-                              <div class="card-body">
-                                <h4 class="card-title text-center text-capitalize">Nightingale</h4>
-                                <div class="text-center">
-                                      <span class="card-icon"><i class="fas fa-user card-user" ></i>20</span>
 
-                                      <span class="card-icon"><i class="fas fa-wifi"></i></span>
-                                      <span class="card-icon"><i class="fas fa-video"></i></span>
-                                      <span class="card-icon"><i class="fas fa-utensils"></i></span>
-                                </div>
-                              </div>
-                              <img
-                                class="card-img-top"
-                                src="https://via.placeholder.com/250x150"
-                                alt="Card image cap"
-                              />
-                            </div>
-                          </div>
-                          <!-- </a> -->
-                          <!-- <a href=""> -->
-                          <div class="col-sm-6 col-md-4">
-                            <div class="card"  id="Meetingroom_7_card">
-                              <div class="card-body">
-                                <h4 class="card-title text-center text-capitalize">Crick</h4>
-                                <div class="text-center">
-                                      <span class="card-icon"><i class="fas fa-user card-user" ></i>20</span>
 
-                                      <span class="card-icon"><i class="fas fa-wifi"></i></span>
-                                      <span class="card-icon"><i class="fas fa-video"></i></span>
-                                      <span class="card-icon"><i class="fas fa-utensils"></i></span>
-                                </div>
-                              </div>
-                              <img
-                                class="card-img-top"
-                                   src="https://via.placeholder.com/250x150"
-                                alt="Card image cap"
-                              />
-                            </div>
-                          </div>
-                          <!-- </a> -->
-                          <!-- <a href="" class="w-100"> -->
-                          <div class="col-sm-6 col-md-4">
-                            <div class="card"  id="Meetingroom_8_card">
-                              <div class="card-body">
-                                <h4 class="card-title text-center text-capitalize">Elmqvist</h4>
-                                <div class="text-center">
-                                      <span class="card-icon"><i class="fas fa-user card-user" ></i>20</span>
-
-                                      <span class="card-icon"><i class="fas fa-wifi"></i></span>
-                                      <span class="card-icon"><i class="fas fa-video"></i></span>
-                                      <span class="card-icon"><i class="fas fa-utensils"></i></span>
-                                </div>
-                              </div>
-                              <img
-                                class="card-img-top"
-                                 src="https://via.placeholder.com/250x150"
-                                alt="Card image cap"
-                              />
-                            </div>
-                          </div>
-                          <!-- </a> -->
-                          <div class="col-sm-6 col-md-4">
-                            <div class="card"  id="Meetingroom_9_card">
-                              <div class="card-body">
-                                <h4 class="card-title text-center text-capitalize">Watson</h4>
-                                <div class="text-center">
-                                      <span class="card-icon"><i class="fas fa-user card-user" ></i>20</span>
-
-                                      <span class="card-icon"><i class="fas fa-wifi"></i></span>
-                                      <span class="card-icon"><i class="fas fa-video"></i></span>
-                                      <span class="card-icon"><i class="fas fa-utensils"></i></span>
-                                </div>
-                              </div>
-                              <img
-                                class="card-img-top"
-                                src="https://via.placeholder.com/250x150"
-                                alt="Card image cap"
-                              />
-                            </div>
-                          </div>
+            }
+  
           </div>
         </div>
          <partial name="_UpperfooterPartial" />

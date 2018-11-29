@@ -28,7 +28,17 @@ function highlightCard() {
         .parents("g")
         .attr("id") + "_card";
   }
+  scrollId = "#" + targetId;
   document.getElementById(targetId).classList.add("highlight");
+
+  // document.getElementById(targetId).scrollIntoView();
+
+  $("html, body").animate(
+    {
+      scrollTop: $(scrollId).offset().top - 150
+    },
+    500
+  );
 }
 
 // $(function() {
