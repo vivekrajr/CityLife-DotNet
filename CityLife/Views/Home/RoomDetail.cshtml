@@ -1,63 +1,152 @@
 @{
-    ViewData["Title"] = "Room";
+    ViewData["Title"] = "Rum";
+
+
+    var subTextItems = new[] { "Bordsmöte", "Skola", "Smågrupper", "Workshop", "Workshop" };
 }
+
 
 <div class="background"></div>
 <div class="row">
     <main role="main" class="container">
-        <partial name="_HeaderPartial" />
+        <!-- Begin page content -->
 
-        <div class="row">
+        <div class="row header-image-row">
             <div class="col-sm">
-                <img src="http://placehold.it/1440x400/4d4d4d"
-                     class="img-fluid request-img"
+                <img src="https://picsum.photos/1140/400/?random"
+                     class="img-fluid"
                      alt="" />
             </div>
         </div>
-
         <div class="row">
-            <div class="col-sm-6">
-                <h2>Jenner</h2>
+            <div class="col-sm-12">
+                <h3 class="text-capitalize">
+                    Jenner
+                </h3>
+            </div>
+
+            <div class="col-md-12 col-lg-6">
+
                 <h5>Information om rummet</h5>
                 <p>
-                    Contrary to popular belief, Lorem Ipsum is not simply random text.
-                    Contrary to popular belief, Lorem Ipsum is not simply random text.
-                    Contrary to popular belief, Lorem Ipsum is not simply random text.
-                    Contrary to popular belief, Lorem Ipsum is not simply random text.
-                    Contrary to popular belief, Lorem Ipsum is not simply random text.
-                </p>
+                    Proin laoreet molestie mi ac mattis. Curabitur velit lorem, euismod
+                    eget leo sed, imperdiet ullamcorper mauris. Fusce posuere dapibus
+                    eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
 
-                <h4>Olika Mobleringar</h4>
+                </p>
 
                 <div class="row">
 
+                    <div class="col-md-12">
+                        <h4>Olika Möbleringar</h4>
+                    </div>
+
+
                     @for (var i = 0; i < 5; i++)
                     {
-                    <div class="col-sm-4">
-                        <img src="http://placehold.it/200x200" />
 
-                        <p>Room</p>
-                    </div>
+                        <div class="col-md-4 text-center">
+                            <img src="https://picsum.photos/150/150/?random"  alt="" class="img-fluid"/>
+                            <p>@subTextItems[i]</p>
+                        </div>
+
                     }
+
+                </div>
+
+            </div>
+
+            <div class="col-md-12 col-lg-6">
+                <div class="row text-center">
+
+                    <div class="col-lg-10 col-md-10 text-center">
+                        <h3>Skicka förfrågan</h3>
+                    </div>
+
+
+                    <div class="col-lg-10" col-md-12>
+                        <form>
+
+                            <div class="form-group">
+                                <input type="text"
+                                       class="form-control"
+                                       id="inputName"
+                                       aria-describedby="name"
+                                       placeholder="Namn" />
+                                <input type="text"
+                                       class="form-control"
+                                       id="inputCompany"
+                                       aria-describedby="company"
+                                       placeholder="Företag/Organisation" />
+                                <input type="email"
+                                       class="form-control"
+                                       id="inputEmail"
+                                       aria-describedby="email"
+                                       placeholder="E-post" />
+                                <input type="number"
+                                       class="form-control"
+                                       id="inputPhone"
+                                       aria-describedby="telephone"
+                                       placeholder="Telefon" />
+                            </div>
+
+                            <div class="p-2 flex-grow-1 d-flex">
+                                <input id="datepicker" />
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">1-5</option>
+                                    <option value="2">5-10</option>
+                                    <option value="3">10-20</option>
+                                    <option value="3">20+</option>
+                                </select>
+                            </div>
+                            <div>
+
+                                <textarea rows="4" class="form-control"
+                                          aria-label="With textarea" placeholder="Är det någonting annat du undrar över?"></textarea>
+                            </div>
+                        </form>
+                    </div>
 
 
                 </div>
             </div>
-            <div class="col-sm-6"></div>
         </div>
 
         <div class="row">
-            <div class="col-sm text-center">
+            <div class="col text-center">
                 <a class="btn btn-danger" asp-controller="Home" asp-action="Plan">Tillbaka till rum</a>
             </div>
         </div>
 
 
         <div class="row">
+            <div class="col-md-12"><h5>Bilder på rummet</h5></div>
 
+            <div class="col-md-8">
+                <img src="https://picsum.photos/1140/400/?random" class="img-fluid" alt=""/>
+            </div>
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="https://picsum.photos/570/210/?random" class="img-fluid" alt="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="https://picsum.photos/570/210/?random" class="img-fluid" alt="" />
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <partial name="_UpperfooterPartial" />
+
     </main>
 </div>
+
 <partial name="_FooterPartial" />
 <partial name="_ModalsPartial" />
+
 
